@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700&family=Mina:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: calc(100% / 2);
+    padding: 0 1rem;
+}
+
+.content {
+    margin-top: 1.5rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: .2s;
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.55);
+}
+
+.content:hover {
+    border: 1px solid #F373A3;
+}
+
+.head-block {
+    background: linear-gradient(to left, #FC7474, #F373A3);
+    padding: .5rem 1rem;
+    color: white;
+    font-family: 'Hind Siliguri', sans-serif;
+    font-weight: 500;
+}
+
+.table-block {
+    display: flex;
+    background: white;
+    padding: .7rem;
+}
+
+.img-block {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.img-block img {
+    width: 50%;
+    margin-left: 1.3rem;
+}
+
+.links-block {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+
+}
+
+.links-block a {
+    padding: .4rem .5rem;
+    color: #59708d;
+    text-decoration: none;
+    border: 1px solid #e9ecef;
+    border-radius: .3rem;
+    margin-bottom: .3rem;
+    transition: .2s;
+    font-family: 'Baloo Da 2', cursive;
+    font-weight: 500;
+}
+
+.links-block a:hover {
+    border: 1px solid #4e5aca;
+    color: #4e5aca;
+}
+
+
+/* Responsive on (850px) */
+
+@media (max-width: 850px) {    
+    .container {
+        max-width: 100%;
+        width: 30rem;
+        margin: 0 auto;
+    }
+}
